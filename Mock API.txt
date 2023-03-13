@@ -1,0 +1,42 @@
+https://ant.design/ Ant Design cho React là tập hợp của hầu hết các thư viện về React
+npm install antd --save
+
+Truy cập https://mockapi.io/ để tạo mockAPI khỏi tạo 1 project Server giả lập
+_____________________________________________________________________________________
+=> Lưu ý: tạo backend giả lập này đang sử dụng Express là 1 Node framework 
+
+Sử dụng công cụ Mock API để mô phỏng Backend
+
+Cấu hình Mock API
+Thư viện npm sử dụng để mock API là connect-api-mocker
+connect-api-mocker có thể được sử dụng với rất nhiều Node framework như Connect, Express và BrowserSync.
+Trong bài này chúng ta sẽ sử dụng Express và connect-api-mocker
+
+Cài đặt 
+Tạo folder rỗng server-mock-api
+Mở forder với VSCode, new terminal
+
+npm init
+npm i -D express connect-api-mocker cors
+
+Cập nhật file package.json
+Thêm đoạn script "start": "node mock-api/index.js" sẽ thành
+"scripts": {
+    "start": "node mock-api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+=> chạy bằng câu lệnh: npm run start
+___________________________________________________________________________
+
+Viết chương trình hiện thị và chỉnh sửa danh sách User từ api của bài thực hành “Tạo Mock API quản lý User và Article”
+Vào thư mục muốn tạo dự án, new terminal
+
+Bước 1: Tạo dự án ReactJS
+npx create-react-app reactjs-request-with-axios
+cd reactjs-request-with-axios
+
+Bước 2: Cài đặt thư viện Axios và react-router-dom
+npm i axios react-router-dom
+npm start
+________________________________________________________________________________
